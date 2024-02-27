@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="een contactformulier">
+     <meta name="keywords" content="contactformulier, tandartsafspraak">
+     <meta name="author" content="Dhr. K. Hieralal">
+     <title>Tandartspraktijk Kieskeurig</title>
+    </head>
+
+    <body>
+        <h1>Tandartsafspraak</h1>
+
+        <h2>Over ons</h2>
+
+        <!-- Algemene informatie over de tandartspraktijk -->
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet voluptatem mollitia, ea cupiditate impedit eius ipsa soluta incidunt perferendis, quae exercitationem fugit corrupti, dolor officia cumque enim fugiat. Ex numquam eius ipsam, accusamus debitis deserunt sint laborum tenetur necessitatibus dolores veniam aperiam dicta impedit? Suscipit quam voluptates, cumque vel maxime blanditiis quis consectetur neque ipsa quidem, numquam nesciunt nostrum nulla nisi beatae optio facere molestiae error. Exercitationem consectetur deserunt, sint placeat laboriosam quia. Hic est, repellat ipsam laboriosam, quasi voluptate labore quis ratione ab quod, fuga suscipit consequuntur? A, recusandae. Ipsam a non adipisci ullam necessitatibus quia modi voluptatibus.</p>
+
+        <!-- Algemene fotos van een tandartspraktijk -->
+
+        <img src="img/Tandarts.jpg" alt="tandarts" width="300">
+        <img src="img/Gebit.jpg" alt="Gebit" width="300">
+        <img src="img/Tanden.jpg" alt="Tanden" width="300">
+        <br><br>
+
+        <form action="https://formspree.io/f/myyqwqnz" method="post">
+
+            <fieldset>
+                <legend><strong>Persoonlijke gegevens</strong></legend><br>
+
+                <!-- Het vermelden van het geslacht -->
+
+                <label for="geslacht"><strong>Geslacht</strong></label><br><br>
+                <input type="radio" name="geslacht" value="neutraal" id="geslacht" checked>Neutraal<br>
+                <input type="radio" name="geslacht" value="man">Man<br>
+                <input type="radio" name="geslacht" value="vrouw">Vrouw<br><br>
+                
+
+                <!-- persoonlijke gegevens -->
+
+                <label for="Voornaam"><strong>Voornaam</strong></label><br>
+                <input type="text" name="Voornaam" id="Voornaam" placeholder="Officiele voornaam" maxlength="25" required><br><br>
+                
+                <label for="Achternaam"><strong>Achternaam</strong></label><br>
+                <input type="text" name="Achternaam" id="Achternaam" placeholder="Officiele achternaam" maxlength="25" required><br><br>
+
+                <label for="Geboortedatum"><strong>Geboortedatum</strong></label><br>
+                <input type="date" name="Geboortedatum" id="Geboortedatum" min="1903-01-01" required><br><br>
+
+                <label for="Leeftijd"><strong>Leeftijd</strong></label><br>
+                <input type="number" name="Leeftijd" id="Leeftijd" min="15" max="120" required><br><br>
+
+                <!-- Contactgegevens -->
+
+                <label for="Adres"><strong>Adres</strong></label><br>
+                <input type="text" name="Adres" id="Adres" placeholder="Geen postbusnummer"  maxlength="25" required><br><br>
+
+                <label for="Postcode"><strong>Postcode</strong></label><br>
+                <input type="text" name="Postcode" id="Postcode" placeholder="0000AA" maxlength="8" required><br><br>
+
+                <label for="Woonplaats"><strong>Woonplaats</strong></label><br>
+                <input type="text" name="Woonlaats" id="Woonplaats" placeholder="Feitelijke woonplaats" maxlength="25" required><br><br>
+
+                <label for="Telefoon"><strong>Telefoon</strong></label><br>
+                <input type="tel" name="Telefoon" id="Telefoon" placeholder="Mobiel of vast" maxlength="10" required><br><br>
+
+                <label for="Email"><strong>Email</strong></label><br>
+                <input type="email" name="Email" id="Email" placeholder="voorbeeld@voorbeeld.nl" maxlength="50" required><br><br>
+
+            </fieldset><br><br>
+
+            <fieldset>
+
+                <!-- Mogelijke (pijn)klachten zijn -->
+
+                <legend><strong>Beschrijving van de klachten</strong></legend><br>
+
+                <label for="pijnklachten"><strong>De pijnklachten zijn:</strong></label><br><br>
+                
+                <input type="checkbox" name="klachten" id="pijnklachten" value="Kiespijn door gaatjes">Kiespijn door gaatjes <br>
+                
+                <input type="checkbox" name="klachten" value="Kiespijn door ontstoken tandvlees">Kiespijn door ontstoken tandvlees <br>
+                
+                <input type="checkbox" name="klachten" value="Kiespijn door ontstoken wortel">Kiespijn door ontstoken wortel <br>
+                
+                <input type="checkbox" name="klachten" value="Pijn bij het kauwen">Pijn bij het kauwen <br>
+                
+                <input type="checkbox" name="klachten" value="Weet het niet">Weet het niet      <br><br>
+
+                <!-- Andere niet pijnlijke klachten zijn -->
+
+                <label for="Andereklachten"><strong>Andere niet pijnlijke klachten zijn</strong></label><br><br>
+                <select name="Andere klachten" id="Andereklachten" multiple>
+                    <option value="Geen" selected>Geen</option>
+                    <option value="Bloedend tandvlees">Bloedend tandvlees</option>
+                    <option value="Los tand">Los tand</option>
+                    <option value="Slechte adem">Slechte adem</option>
+                    <option value="Los zittend prothese">Los zittend prothese</option>
+                </select><br>
+                
+                <p><strong>U kunt hier meerdere opties aanvinken. Druk op Ctrl en selecteer met de muis</strong></p>
+
+                <label for="Bestanden">Foto van gebit</label>
+                <input type="file" name="Bestanden" id="Bestanden" accept="img/jpeg, img/png" multiple>
+
+            </fieldset><br><br>
+
+            <fieldset>
+                <!-- Nadere omschrijving van de klachten -->
+
+                <legend><strong>Toelichting van de klachten</strong></legend><br>
+                <label for="Toelichting"><strong>Nadere informatie over de klachten</strong></label><br><br>
+                <textarea name="Toelichting" id="Toelichting" cols="30" rows="10" placeholder="Omschrijving de pijnklachten in maximaal 1500 tekens" maxlength="1500"></textarea><br><br>
+                <br><br>
+
+                <label for="Verzending"><strong>Dag van verzending</strong></label>
+                <input type="date" name="Verzending" id="Verzending" min="2023-10-15" max="2028-01-01">
+            </fieldset><br>
+
+            <!-- Resetten en verzenden --> 
+           
+            <input type="reset" value="Reset">
+            <button type="submit" name="Verzenden"><strong>Verzenden</strong></button>
+
+        </form>
+    </body>
+</html>
